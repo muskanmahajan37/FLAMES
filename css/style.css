@@ -1,0 +1,280 @@
+/*
+
+Author - Vinit Shahdeo
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #fff;
+	background: #032429;
+}
+
+.row {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px 30px;
+	background: #032429;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.row:before {
+	position: relative;
+	content: "";
+	display: block;
+	top: 0;
+	left: -5000px;
+	height: 100%;
+	width: 15000px;
+	z-index: -1;
+	background: inherit;
+}
+
+.row span {
+	position: relative;
+	display: inline-block;
+	margin: 30px 10px;
+}
+
+.gate {
+	display: inline-block;
+	width: 315px;
+	padding: 10px 0 10px 15px;
+	font-family: "Open Sans", sans;
+	font-weight: 400;
+	color: #377D6A;
+	background: #efefef;
+	border: 0;
+	border-radius: 3px;
+	outline: 0;
+	text-indent: 65px;
+	transition: all .3s ease-in-out;
+}
+
+.gate::-webkit-input-placeholder {
+	color: #efefef;
+	text-indent: 0;
+	font-weight: 300;
+}
+
+.gate+label {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 15px;
+	text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+	background: #7AB893;
+	transition: all .4s ease-in-out;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	transform-origin: left bottom;
+	z-index: 99;
+}
+
+.gate+label:before,
+.gate+label:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 3px;
+	background: #377D6A;
+	transform-origin: left bottom;
+	transition: all .4s ease-in-out;
+	pointer-events: none;
+	z-index: -1;
+}
+
+.gate+label:before {
+	background: rgba(3, 36, 41, 0.2);
+	z-index: -2;
+	right: 20%;
+}
+
+span:nth-child(2) .gate {
+	text-indent: 85px;
+}
+
+span:nth-child(2) .gate:focus,
+span:nth-child(2) .gate:active {
+	text-indent: 0;
+}
+
+.gate:focus,
+.gate:active {
+	color: #377D6A;
+	text-indent: 0;
+	background: #fff;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.gate:focus::-webkit-input-placeholder,
+.gate:active::-webkit-input-placeholder {
+	color: #aaa;
+}
+
+.gate:focus+label,
+.gate:active+label {
+	transform: rotate(-66deg);
+	border-radius: 3px;
+}
+
+.gate:focus+label:before,
+.gate:active+label:before {
+	transform: rotate(10deg);
+}
+
+.fa {
+	color: #fff;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+@-webkit-keyframes heartbeat {
+	0% {
+		-webkit-transform: scale(1)
+	}
+	50% {
+		-webkit-transform: scale(1.4)
+	}
+	100% {
+		-webkit-transform: scale(1)
+	}
+}
+
+@-moz-keyframes heartbeat {
+	0% {
+		-moz-transform: scale(1)
+	}
+	50% {
+		-moz-transform: scale(1.4)
+	}
+	100% {
+		-moz-transform: scale(1)
+	}
+}
+
+@-o-keyframes heartbeat {
+	0% {
+		-o-transform: scale(1)
+	}
+	50% {
+		-o-transform: scale(1.4)
+	}
+	100% {
+		-o-transform: scale(1)
+	}
+}
+
+@keyframes heartbeat {
+	0% {
+		transform: scale(1)
+	}
+	50% {
+		transform: scale(1.4)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.heartbeat {
+	-webkit-animation-name: heartbeat;
+	-moz-animation-name: heartbeat;
+	-o-animation-name: heartbeat;
+	animation-name: heartbeat;
+}
+
+.animate-infinite-heartbeat {
+	-webkit-animation: heartbeat 2s infinite;
+	animation: heartbeat 2s infinite;
+}
+
+.button-8 {
+	width: 140px;
+	height: 50px;
+	border: 2px solid #377D6A;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0 0 40px 50px;
+}
+
+.button-8 a {
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+	transition: all .5s ease;
+	z-index: 2;
+	position: relative;
+}
+
+.eff-8 {
+	width: 140px;
+	height: 50px;
+	border: 70px solid #377D6A;
+	position: absolute;
+	transition: all .5s ease;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.button-8:hover .eff-8 {
+	border: 0px solid #377D6A;
+}
+
+.button-8:hover a {
+	color: #fff;
+}
+
+.msg span {
+	text-align: center;
+}
+
+@keyframes bouncing-loader {
+	to {
+		opacity: 0.1;
+		transform: translate3d(0, -1rem, 0);
+	}
+}
+
+.bouncing-loader {
+	display: flex;
+	justify-content: center;
+}
+
+.bouncing-loader>div {
+	width: 1rem;
+	height: 1rem;
+	margin: 3rem 0.2rem;
+	background: #fff;
+	border-radius: 50%;
+	animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncing-loader>div:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.bouncing-loader>div:nth-child(3) {
+	animation-delay: 0.4s;
+}
