@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html">
+      <title>Flames Game - Love Calculator</title>
+      <meta name="author" content="Vinit Shahdeo">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Do you want to know what type of relationship(friendship,love,affection,marriage,enemy,sister) you are going to have with your dream partner?">
+      <meta name="author" content="Vinit Shahdeo">
+      <meta name="email" content="vinitshahdeo@gmail.com">
+      <meta name="copyright" content="Vinit Shahdeo 2018"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Flames Game" />
+      <meta property="og:description" content="Do you want to know what type of relationship(friendship,love,affection,marriage,enemy,sister) you are going to have with your dream partner?" />
+      <meta property="og:image" content="http://vinitshahdeo.com/projects/flames/loveflames.png" />
+      <meta property="og:url" content="vinitshahdeo.com" />
+      <meta property="og:site_name" content="Flames Game" />
+      <meta name="twitter:card" content="website">
+      <meta name="twitter:site" content="Flames Game">
+      <meta name="twitter:title" content="Flames Game">
+      <meta name="twitter:description" content="Do you want to know what type of relationship(friendship,love,affection,marriage,enemy,sister) you are going to have with your dream partner?">
+      <meta name="twitter:creator" content="@Vinit_Shahdeo">
+      <meta name="twitter:image" content="http://vinitshahdeo.com/projects/flames/loveflames.png">
+      <meta itemprop="name" content="Flames Game">
+      <meta itemprop="description" content="Do you want to know what type of relationship(friendship,love,affection,marriage,enemy,sister) you are going to have with your dream partner?">
+      <meta itemprop="image" content="http://vinitshahdeo.com/projects/flames/loveflames.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="icon" type="image/png" href="loveflames.png">
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   </head>
+   <body>
+      <div class="row">
+         <h1>Flames <i class="fa fa-heartbeat heartbeat animate-infinite-heartbeat"></i> Calculator </h1>
+         <span>
+         <input class="gate" id="name1" type="text" placeholder="enter your full name please" autocomplete="off"/><label for="element">Your Name</label>
+         </span>
+         <span>
+         <input class="gate" id="name2" type="text" placeholder="Yes, your loved ones name?" autocomplete="off"/><label for="move">Friend's Name</label>
+         </span>
+         <span>
+            <div class="button-8" onclick="flames()">
+               <div class="eff-8"></div>
+               <a href="#">F.L.A.M.E.S</a>
+            </div>
+         </span>
+         <center>
+            <h1 id="msg">
+               <span
+                  class="txt-rotate"
+                  data-period="2000"
+                  data-rotate='[ "FRIENDS","LOVER","AFFECTIION","MARRIAGE","ENEMY","SISTER"]'></span>
+            </h1>
+         </center>
+      </div>
+      <script src="js/script.js" type="application/javascript"></script>
+      <script>
+         function flames()
+             {
+                 
+             $('#msg').html("<div class='bouncing-loader'><div></div><div></div><div></div></div>");
+             var name1=document.getElementById("name1").value;
+             var name2=document.getElementById("name2").value;
+             $.ajax({
+         	url: 'http://vinitshahdeo.com/flames.php?name1='+name1+'&name2='+name2+'',
+         	type: 'GET',
+         	success: function(data){
+         		console.log(data);
+                 $('#msg').html(data.relationship);
+         	},
+         	error: function(data){
+         		console.log(data);
+                 $('#msg').html("OOPS! Error Occured, please try again!");
+         	}
+         });
+             }
+             
+      </script>    
+   </body>
+   <!-- Made with love by Vinit Shahdeo -->
+</html>
