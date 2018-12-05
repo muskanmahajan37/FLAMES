@@ -6,6 +6,15 @@
 
 > **View [Live Demo](http://vinitshahdeo.com/projects/flames/)**
 
+**Flames** Game is a relationship calculating algorithm famous between the youngsters. So what FLAMES stance for?
+
+- **F** - Friendship
+- **L** - Love
+- **A** - Affection
+- **M** - Marriage
+- **E** - Enemy
+- **S** - Sister
+
 ## API
 
 I've built this API for fun. Anyone is welcome to use it!
