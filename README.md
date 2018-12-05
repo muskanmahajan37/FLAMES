@@ -17,7 +17,7 @@
 
 ## API
 
-[![Flames API](https://img.shields.io/badge/Flames-API-dodgerblue.svg?style=for-the-badge)](http://vinitshahdeo.com/flames.php/)
+[![Flames API](https://img.shields.io/badge/Flames-API-dodgerblue.svg)](http://vinitshahdeo.com/flames.php/)
 
 I've built this API for fun. Anyone is welcome to use it!
 
