@@ -6,7 +6,7 @@
 
 > **View [Live Demo](http://vinitshahdeo.com/projects/flames/)**
 
-**Flames** Game is a relationship calculating algorithm famous between the youngsters. So what FLAMES stance for?
+**Flames** Game is a relationship calculating algorithm famous between the youngsters. So what does FLAMES stands for?
 
 - **F** - **`Friend`**
 - **L** - **`Love`**
