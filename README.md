@@ -8,7 +8,7 @@
 
 **Flames** Game is a relationship calculating algorithm famous between the youngsters. So what FLAMES stance for?
 
-- **F** - **`Friendship`**
+- **F** - **`Friend`**
 - **L** - **`Love`**
 - **A** - **`Affection`**
 - **M** - **`Marriage`**
@@ -55,8 +55,4 @@ $.ajax({
 
 **[Vinit Shahdeo](http://www.vinitshahdeo.com/)**
 
-
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/vinitshahdeo/FLAMES.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2FFLAMES)
-
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/FLAMES.svg?style=social)](https://github.com/vinitshahdeo/FLAMES/blob/master/LICENSE)
-
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/FLAMES.svg?style=social)](https://github.com/vinitshahdeo/FLAMES/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/vinitshahdeo/FLAMES.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2FFLAMES)
