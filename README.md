@@ -8,10 +8,10 @@
 
 **Flames** Game is a relationship calculating algorithm famous between the youngsters. So what FLAMES stance for?
 
-- **F** - Friendship
-- **L** - Love
-- **A** - Affection
-- **M** - Marriage
+- **F** - `Friendship`
+- **L** - `Love`
+- **A** - `Affection`
+- **M** - `Marriage`
 - **E** - Enemy
 - **S** - Sister
 
