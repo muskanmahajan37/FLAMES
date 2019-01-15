@@ -85,7 +85,7 @@ $request->setMethod(HTTP_METH_GET);
 
 $request->setQueryData(array(
     'name1' => 'Vinit',
-    'name2' => 'Aaya'
+    'name2' => 'Sherry'
 ));
 
 try {
