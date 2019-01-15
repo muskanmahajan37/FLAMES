@@ -53,6 +53,27 @@ $.ajax({
 });
 ```
 
+#### This is **NodeJS** Example
+
+```js
+var request = require("request");
+
+var options = {
+    method: 'GET',
+    url: 'http://vinitshahdeo.com/flames.php',
+    qs: {
+        name1: 'Vinit',
+        name2: 'Sherry'
+    }
+};
+
+request(options, function(error, response, body) {
+    if (error) throw new Error(error);
+
+    console.log(body);
+});
+```
+
 ### Author
 
 **[Vinit Shahdeo](http://www.vinitshahdeo.com/)**
