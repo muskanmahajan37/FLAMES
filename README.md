@@ -74,6 +74,33 @@ request(options, function(error, response, body) {
 });
 ```
 
+#### This is **PHP** Example
+
+```php
+<?php
+
+$request = new HttpRequest();
+$request->setUrl('http://vinitshahdeo.com/flames.php');
+$request->setMethod(HTTP_METH_GET);
+
+$request->setQueryData(array(
+    'name1' => 'Vinit',
+    'name2' => 'Aaya'
+));
+
+try {
+    $response = $request->send();
+
+    echo $response->getBody();
+}
+catch (HttpException $ex) {
+    echo $ex;
+}
+
+?>
+
+```
+
 ### Author
 
 **[Vinit Shahdeo](http://www.vinitshahdeo.com/)**
