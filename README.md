@@ -1,5 +1,7 @@
 # FLAMES [Game](http://vinitshahdeo.com/projects/flames/)
 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/FLAMES.svg?logo=github&style=social)](https://github.com/vinitshahdeo/FLAMES/) [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/FLAMES.svg?style=social&logo=github)](https://github.com/vinitshahdeo/FLAMES/blob/master/LICENSE) [![Flames API](https://img.shields.io/badge/php-API-dodgerblue.svg?style=social&logo=php)](https://github.com/vinitshahdeo/FLAMES/)
+
 > **F.L.A.M.E.S** is a fun game to find out the status of relationship. Entering two names will give you the outcome of a relationship between them.
 
 [![Flames Game](https://img.shields.io/badge/Flames-Calculator-teal.svg)](http://vinitshahdeo.com/projects/flames/) [![Fun Game](https://img.shields.io/badge/Fun-Game-orange.svg)](http://vinitshahdeo.com/projects/flames/)
@@ -17,7 +19,7 @@
 
 ## API
 
-[![Flames API](https://img.shields.io/badge/Flames-API-dodgerblue.svg)](http://vinitshahdeo.com/flames.php/) [![Fun](https://img.shields.io/badge/Just--For-Fun-green.svg)](http://vinitshahdeo.com/flames.php/)
+[![Flames API](https://img.shields.io/badge/Flames-API-dodgerblue.svg?logo=php&logoColor=white)](http://vinitshahdeo.com/flames.php/) [![Fun](https://img.shields.io/badge/Just%20For-Fun-green.svg)](http://vinitshahdeo.com/flames.php/)
 
 I've built this API for fun. Anyone is welcome to use it!
 
@@ -105,4 +107,4 @@ catch (HttpException $ex) {
 
 **[Vinit Shahdeo](http://www.vinitshahdeo.com/)**
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/FLAMES.svg?style=social)](https://github.com/vinitshahdeo/FLAMES/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/vinitshahdeo/FLAMES.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2FFLAMES)
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/FLAMES.svg?style=social&logo=github)](https://github.com/vinitshahdeo/FLAMES/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/vinitshahdeo/FLAMES.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fvinitshahdeo%2FFLAMES)
